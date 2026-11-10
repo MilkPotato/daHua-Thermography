@@ -1,0 +1,16 @@
+# 本地真实配置（含密码），不要提交
+config.ini
+
+# ffmpeg 二进制（体积大，用 tools/dl_ffmpeg.sh 下载）
+tools/ffmpeg/
+
+# 编译产物
+ThermalView.exe
+*.exe
+*.pdb
+
+# 本地/系统杂项
+*.lnk
+AI生成/
+备注
+.vs/

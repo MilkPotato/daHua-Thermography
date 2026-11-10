@@ -1,0 +1,18 @@
+# 大华热像仪 预览服务配置示例
+# 使用方法：复制本文件为 config.ini，然后填入你的摄像头信息。
+# config.ini 已被 .gitignore 忽略，不会被提交；请勿把真实密码提交到仓库。
+
+ip = 192.168.1.108
+user = admin
+pass = YOUR_PASSWORD
+
+# 通道与码流
+channel = 1
+subtype = 0          # RTSP 主码流: 0=1280x960
+http_subtype = 1     # HTTP 备码流: 1=256x192
+
+# 界面端口
+port = 8099
+
+# 视频源: 留空=自动(优先 RTSP，失败自动降级到 HTTP) | rtsp | http
+source =
